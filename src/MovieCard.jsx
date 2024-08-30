@@ -12,8 +12,8 @@ function MovieCard({ movie }) {
         alt={movie.title}
         className="movie-poster"
       />
-      <div className="movie-details">git init
-        <h3>{movie.title}</h3>a<p>{movie.release_date?.split("-")[0]}</p>
+      <div className="movie-details">
+        <h3>{movie.title}</h3><p>{movie.release_date?.split("-")[0]}</p>
       </div>
     </div>
   );
