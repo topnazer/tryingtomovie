@@ -1,0 +1,39 @@
+.movie-card {
+  background-color: rgba(
+    248,
+    208,
+    208,
+    0.8
+  ); /* Adjust the alpha value (0.0 - 1.0) for transparency */
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(91, 19, 19, 0.1);
+  text-align: center;
+  padding: 10px;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-poster {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #400606;
+}
+
+.movie-details {
+  padding: 10px;
+}
+
+.movie-details h3 {
+  font-size: 18px;
+  color: #1a1810;
+}
+
+.movie-details p {
+  font-size: 14px;
+  color: #1a1810;
+}
