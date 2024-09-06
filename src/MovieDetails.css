@@ -1,0 +1,85 @@
+.movie-details-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: rgb(14, 13, 13);
+}
+
+.movie-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media(min-width: 768px) {
+    .movie-details {
+        flex-direction: row;
+    }
+}
+
+.movie-poster {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+    height: auto;
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.movie-title {
+    font-size: 5rem; /* Increase the font size */
+    font-weight: bold;
+    margin-bottom: 1rem; /* Add some spacing between title and content */
+    color: #000; /* Ensure it's readable */
+}
+.movie-overview, .movie-meta {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.movie-meta {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.movie-meta span {
+    display: inline-block;
+    width: 48%; /* Ensures two columns of metadata */
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.movie-meta span strong {
+    font-weight: bold;
+    color: #000000; /* You can adjust this for readability */
+}
+
+.server-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.server-link-btn {
+    padding: 0.75rem 2rem;
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.server-link-btn:hover {
+    background-color: #2563eb;
+}

@@ -1,0 +1,69 @@
+.movie-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 5px;
+    padding: 0;
+    height: 100%;
+    max-width: 140px; /* Adjusted width */
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-poster {
+    width: 100%;
+    height: 230px; /* Adjusted poster size */
+    object-fit: cover;
+}
+
+.movie-info {
+    padding: 2px; /* Reduce padding to minimize space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.movie-title {
+    font-size: 0.75rem !important; /* Smaller title size */
+    font-weight: bold;
+    margin-bottom: 1px;
+    text-align: center;
+    white-space: normal; /* Allow wrapping */
+    line-height: 1.2; /* Adjust line spacing for readability */
+    max-height: 2.4em; /* Limit title to 2 lines */
+    overflow: hidden; /* Ensure the text doesn't overflow */
+    text-overflow: ellipsis; /* Show ellipsis if text overflows */
+}
+
+.movie-year {
+    font-size: 0.6rem; /* Smaller year font size */
+    color: #bbb;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+.watch-now-btn {
+    display: inline-block;
+    padding: 3px 4px; /* Reduced padding to fit the space */
+    background-color: #ff5722;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.5rem; /* Reduced button font size */
+    transition: background-color 0.3s ease;
+}
+
+.watch-now-btn:hover {
+    background-color: #e64a19;
+}
