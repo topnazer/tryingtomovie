@@ -4,10 +4,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: #1c1c1c;
     color: #fff;
-    background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2c3bWNsemMxYzN6MXViYnR3YWdwaW5wdzYxbGl4cTV3dXdwNDlvOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7eAvzJ0SBBzHy/giphy.gif);
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-position: center; /* Centers the image */
+    background-image: url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDdlYzluYWZtYjk3cHRrd25xYnE4ZGlteXVxNnYwbnh4bm95eXM3eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MNTgBQcCmzUs7t5mW0/giphy.gif);
+    
     background-attachment: fixed; /* Keeps the background fixed while scrolling */
   }
 
@@ -78,3 +76,55 @@ nav {
     gap: 10px; /* Close the gap between the cards */
 }
 
+/* Genre Dropdown Styling */
+.genre-dropdown {
+    padding: 8px;
+    font-size: 1.1rem;
+   
+    color: rgb(238, 18, 18);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.genre-dropdown option {
+    background-color: #1c1c1c;
+    color: white;
+}
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.pagination-button {
+    padding: 8px 16px;
+    background-color: #2a2a2a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-button:hover {
+    background-color: #444;
+}
+
+.pagination-button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.pagination-info {
+    padding: 8px 16px;
+    background-color: #1e1e1e;
+    color: #e6e6e6;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
